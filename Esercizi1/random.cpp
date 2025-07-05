@@ -67,6 +67,20 @@ double Random :: Gauss(double mean, double sigma) {
    return mean + x * sigma;
 }
 
+double Random :: CauLorDistr(double mu, double gamma) {
+   // This function generates a random number from a Gaussian distribution with given mean and sigma
+   double u=Rannyu();
+   double x= mu + gamma* tan(M_PI* (this->Rannyu() - 0.5));
+   return x;
+}
+
+double Random :: ExpDistr(double lambda) {
+   // This function generates a random number from a Gaussian distribution with given mean and sigma
+   double u=Rannyu();
+   double x= - (log(u)/lambda);
+   return x;
+}
+
 double Random :: Rannyu(double min, double max){
    // This function generates a random number in the range [min, max)
    return min+(max-min)*Rannyu();

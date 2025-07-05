@@ -1,1 +1,6 @@
 *.Identifier
+*.exe
+*.o
+*.json
+*.pdf
+*LSN_Exercises*
