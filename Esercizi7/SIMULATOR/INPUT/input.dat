@@ -1,0 +1,25 @@
+SIMULATION_TYPE        0
+RESTART                0
+TEMP                   1.99
+NPART                  108
+RHO                    0.8
+R_CUT                  2.5
+DELTA                  0.001
+NBLOCKS                100
+NSTEPS                 1000
+
+ENDINPUT
+
+MONTECARLO sim_type=1
+#dopo aver cambiato le flag funziona e i valori sembrano generosi
+delta ottimale per Montecarlo con metropolis _delta=0.105
+impostare TEMP a 1.1
+
+SIMULAZIONE MOLEC. DYNAMICS sim_type=0
+per verlet invece teniamo _delta= 0.001
+_temp ideale di partenza =1.99 in modo che il sistema dopo l'equilibrazione raggiunga temperatura 1.1
+!!! attenzione, serve sempre mettere negli input sia Temperatura che Kinetic Energy altrimenti non ho spazio
+nel mio vec per salvare il valore dell'energia cinetica
+
+Dai grafice si
+
