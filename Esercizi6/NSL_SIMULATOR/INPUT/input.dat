@@ -1,0 +1,15 @@
+SIMULATION_TYPE        3 1. 0.
+RESTART                1
+TEMP                   0.0
+NPART                  50
+RHO                    0.8
+R_CUT                  2.5
+DELTA                  0.1
+NBLOCKS                100
+NSTEPS                 10000
+
+ENDINPUT
+
+SIMULATION TYPE 3 
+è quella con gibbs
+2 
